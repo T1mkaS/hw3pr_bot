@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  bot:
+    build:
+      context: "hw3pr_bot"
+      dockerfile: Dockerfile
+    volumes:
+      - "./hw3pr_bot:/hw3pr_bot"
+    restart: always
